@@ -18,8 +18,9 @@ Route::get('/', function () {
 });
 
 
+use App\Http\Controllers\Admin\NewsController;
 Route::controller(NewsController::class)->group(function() {
-    Route::get('admin/news/create', 'add');
+    Route::get('admin/news/create', 'add')->middleware('auth');
 });
 
 
@@ -34,9 +35,10 @@ Route::controller(NewsController::class)->group(function() {
 
 
 #4.【応用】 前章でAdmin/ProfileControllerを作成し、add Action, edit Actionを追加しました。web.phpを編集して、admin/profile/create にアクセスしたら ProfileController の add Action に、admin/profile/edit にアクセスしたら ProfileController の edit Action に割り当てるように設定してください
-Route::controller(ProfileController::class)->prefix('admin')->group(function() {
-    Route::get('admin/profile/create', 'add');
-    Route::get('admin/profile/edit', 'edit');
+use App\Http\Controllers\Admin\ProfileController;
+Route::controller(ProfileController::class)->group(function() {
+    Route::get('admin/profile/create', 'add')->middleware('auth');
+    Route::get('admin/profile/edit', 'edit')->middleware('auth');
 
 });
 Auth::routes();
