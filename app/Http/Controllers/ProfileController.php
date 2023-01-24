@@ -10,16 +10,12 @@ class ProfileController extends Controller
 {
     public function index(Request $request)
     {
-        $posts = Profile::all()->sortByDesc('updated_at');
+        $post = Profile::all()->sortByDesc('updated_at')->first();
 
-        if (count($posts) > 0) {
-            $name = $posts->shift();
-        } else {
-            $name = null;
-        }
+       
 
         // news/index.blade.php ファイルを渡している
         // また View テンプレートに headline、 posts、という変数を渡している
-        return view('profile.index', ['name' => $name, 'posts' => $posts]);
+        return view('profile.index', ['post' => $post]);
     }
 }
