@@ -45,7 +45,7 @@ class NewsController extends Controller
         $news->save();
         
         
-        return redirect('admin/news/create');
+        return redirect('admin/news');
     }
     
     public function index(Request $request)
@@ -113,7 +113,7 @@ class NewsController extends Controller
         // 削除する
         $news->delete();
 
-        return redirect('admin/news/');
+        return redirect('admin/news');
     }
     
     

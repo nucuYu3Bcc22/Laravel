@@ -3,7 +3,6 @@
 @section('content')
     <div class="container">
         <hr color="#c0c0c0">
-        <p>Welcome!!</p>
         @if (!is_null($headline))
             <div class="row">
                 <div class="headline col-md-10 mx-auto">
@@ -12,7 +11,7 @@
                             <div class="caption mx-auto">
                                 <div class="image">
                                     @if ($headline->image_path)
-                                        <img src="{{ secure_asset('storage/profile/image/' . $headline->image_path) }}">
+                                        <img src="{{ secure_asset('storage/image/' . $headline->image_path) }}">
                                     @endif
                                 </div>
                                 <div class="title p-2">
@@ -46,7 +45,7 @@
                             </div>
                             <div class="image col-md-6 text-right mt-4">
                                 @if ($post->image_path)
-                                    <img src="{{ secure_asset('storage/profile/image/' . $post->image_path) }}">
+                                    <img src="{{ secure_asset('storage/image/' . $post->image_path) }}">
                                 @endif
                             </div>
                         </div>
