@@ -2,6 +2,22 @@ body {
   color: #000;
 }
 
+
+.right-contents {
+  width: 400px;
+  float: right;
+}
+
+
+.card-contents {
+  float: right;
+  padding: 40px;
+  display: block;
+  margin-right: 20px;
+  background-color: #fff;
+}
+
+
 .navbar-laravel {
   background-color: #000;
 }
@@ -12,6 +28,9 @@ body {
       height: 82px;
   }
 }
+
+
+
 
 .headline {
   .caption {
@@ -58,4 +77,9 @@ body {
       }
     }
   }
+}
+
+
+.right-text {
+  float: right;
 }

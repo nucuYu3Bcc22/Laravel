@@ -18,6 +18,8 @@
         <link href="{{ secure_asset('css/front.css') }}" rel="stylesheet">
     </head>
     <body>
+        
+        
         <div id="app">
             <nav class="navbar navbar-expand-md navbar-dark navbar-laravel">
                 <div class="container">
@@ -28,9 +30,12 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     
+                    
+                    
+                    
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto">
-                          <p>Welcome!!</p>    
+                          <p><strong>Welcome!!</strong></p>    
                         </ul>
                         
                         <ul class="navbar-nav">
@@ -66,9 +71,23 @@
                 </div>
             </nav>
             
-            <main class="py-4">
-                @yield('content')
+                <main class="mr-4">
+                    <div class="container">
+                    <div class="col col-lg-2">
+                        <br>
+                     </div>
+                    <div class="right-contents">
+                    <div class="card-contents">
+                    <h2 class="right-text">天気予報</h2>
+                    </div>
+                    </div>
+                    </div>
+                </main>
+            <main class="my-4">
+                  @yield('content')
             </main>
+            
+            
         </div>
     </body>
 </html>
