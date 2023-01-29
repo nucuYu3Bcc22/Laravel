@@ -4,6 +4,8 @@
 - (Front05 HTMLとCSSでサイトを作成していく)[https://be.tech-boost.jp/common/books/439]
 - (PHP/Laravel 19 一般ユーザーが読むニュースサイトを作成しよう)[https://be.tech-boost.jp/common/books/459]
 - (気象庁API)[https://www.data.jma.go.jp/developer/xml/feed/regular_l.xml]
+- (PHPで天気を取得、表示させたい！OpenWeatherMap APIの使い方)[https://hsmt-web.com/blog/openweathermap-api/]
+- (OpenWeather)[https://openweathermap.org/]
 - 
 
 

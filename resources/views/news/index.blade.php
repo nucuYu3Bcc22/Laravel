@@ -11,16 +11,21 @@
                     <div class="left-contents">
                         <div class="card-contents">
                             <h3 class="left-text">今日の天気</h3>
-                            <entry>
-                                    <title>全般季節予報（２週間気温予報）</title>
-                                            <id>https://www.data.jma.go.jp/developer/xml/data/20230129050733_0_VPZK70_010000.xml</id>
-                                            <updated>2023-01-29T05:07:33Z</updated>
-                                        <author>
-                                            <name>気象庁</name>
-                                        </author>
-                                            <link type="application/xml" href="https://www.data.jma.go.jp/developer/xml/data/20230129050733_0_VPZK70_010000.xml"/>
-                                        <content type="text">【２週間気温予報（概況）】</content>
-                            </entry>
+                <!--<entry>       -->
+                <!--                    <table border>-->
+                <!--            <tr>-->
+                <!--                <th>天気</th>-->
+                <!--                <th>気温</th>-->
+                <!--            </tr>-->
+                <!--            <tr>-->
+                <!--            <th>-->
+                <!--                <?php echo wheather("icon"); ?>-->
+                <!--                <?php echo wheather("weather"); ?>-->
+                <!--            </th>-->
+                <!--                <th><?php echo wheather("temp"); ?>℃</th>-->
+                <!--            </tr>-->
+                <!--    </table>-->
+                <!--</entry>-->
                         </div>
                     </div>
                 </div>

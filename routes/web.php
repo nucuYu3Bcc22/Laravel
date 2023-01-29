@@ -59,3 +59,6 @@ Route::get('/', [PublicNewsController::class, 'index'])->name('news.index');
 
 use App\Http\Controllers\ProfileController as PublicProfileController;
 Route::get('/profile', [PublicProfileController::class, 'index'])->name('profile.index');
+
+use App\Http\Controllers\WheatherController as PublicWheatherController;
+Route::get('/', [PublicWheatherController::class, 'wheather'])->name('news.index');
