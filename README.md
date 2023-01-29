@@ -3,8 +3,8 @@
 - (Front04 基礎的なCSSについて知る)[https://be.tech-boost.jp/common/books/438]
 - (Front05 HTMLとCSSでサイトを作成していく)[https://be.tech-boost.jp/common/books/439]
 - (PHP/Laravel 19 一般ユーザーが読むニュースサイトを作成しよう)[https://be.tech-boost.jp/common/books/459]
+- (気象庁API)[https://www.data.jma.go.jp/developer/xml/feed/regular_l.xml]
 - 
-
 
 
 
