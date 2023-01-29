@@ -1,5 +1,28 @@
 @extends('layouts.front')
 
+@section('weatherbar')
+    <div class="left-contents">
+        <div class="card-contents">
+                            
+                <entry>       
+                   <table border>
+                            <tr>
+                                <th>天気</th>
+                                <th>気温</th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <?php echo wheather("icon"); ?>
+                                    <?php echo wheather("weather"); ?>
+                                </th>
+                                <th><?php echo wheather("temp"); ?>℃</th>
+                            </tr>
+                    </table>
+                </entry>
+        </div>
+    </div>
+@endsection
+
 @section('content')
     <div class="container">
         <hr color="#c0c0c0">
@@ -7,26 +30,6 @@
                <div class="container">
                     <div class="col col-lg-2">
                         <br>
-                    </div>
-                    <div class="left-contents">
-                        <div class="card-contents">
-                            <h3 class="left-text">今日の天気</h3>
-                <!--<entry>       -->
-                <!--                    <table border>-->
-                <!--            <tr>-->
-                <!--                <th>天気</th>-->
-                <!--                <th>気温</th>-->
-                <!--            </tr>-->
-                <!--            <tr>-->
-                <!--            <th>-->
-                <!--                <?php echo wheather("icon"); ?>-->
-                <!--                <?php echo wheather("weather"); ?>-->
-                <!--            </th>-->
-                <!--                <th><?php echo wheather("temp"); ?>℃</th>-->
-                <!--            </tr>-->
-                <!--    </table>-->
-                <!--</entry>-->
-                        </div>
                     </div>
                 </div>
                     

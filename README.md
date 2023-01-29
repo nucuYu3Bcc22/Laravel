@@ -6,6 +6,7 @@
 - (気象庁API)[https://www.data.jma.go.jp/developer/xml/feed/regular_l.xml]
 - (PHPで天気を取得、表示させたい！OpenWeatherMap APIの使い方)[https://hsmt-web.com/blog/openweathermap-api/]
 - (OpenWeather)[https://openweathermap.org/]
+- (【Laravel】レイアウトの作成)[https://qiita.com/oouaioi/items/cc606f915859872eec9a]
 - 
 
 

@@ -18,7 +18,11 @@
         <link href="{{ secure_asset('css/front.css') }}" rel="stylesheet">
     </head>
     <body>
-        
+        @section('weatherbar')
+    <h2 class="menutitle">天気予報</h2>
+    <ul>
+      <li>@show</li>
+    </ul>
         
         <div id="app">
             <nav class="navbar navbar-expand-md navbar-dark navbar-laravel">
