@@ -1,39 +1,33 @@
 @extends('layouts.front')
 
-@section('weatherbar')
-    <div class="left-contents">
-        <div class="card-contents">
-                            
-                <entry>       
-                   <table border>
-                            <tr>
-                                <th>天気</th>
-                                <th>気温</th>
-                            </tr>
-                            <tr>
-                                <th>
-                                    <?php echo wheather("icon"); ?>
-                                    <?php echo wheather("weather"); ?>
-                                </th>
-                                <th><?php echo wheather("temp"); ?>℃</th>
-                            </tr>
-                    </table>
-                </entry>
-        </div>
-    </div>
-@endsection
 
 @section('content')
-    <div class="container">
-        <hr color="#c0c0c0">
-        
-               <div class="container">
-                    <div class="col col-lg-2">
-                        <br>
+    <div class="container-fluid">
+            <div class="col-md-10 mx-auto">
+                <hr color="#c0c0c0">
+                <div class="report-container">
+                    <h2><?php echo $data->name; ?>の天気予報</h2>
+                    <div class="time">
+                        <div><?php echo date("l g:i a", $currentTime); ?></div>
+                        <div><?php echo date("jS F, Y",$currentTime); ?></div>
+                        <div><?php echo ucwords($data->weather[0]->description); ?></div>
+                    </div>
+                    <div class="weather-forecast">
+                        <img
+                            src="http://openweathermap.org/img/w/<?php echo $data->weather[0]->icon; ?>.png"
+                            class="weather-icon" />最高温度 <?php echo $data->main->temp_max; ?> °C / <span
+                            class="min-temperature">最低温度 <?php echo $data->main->temp_min; ?> °C</span>
+                    </div>
+                    <div class="time">
+                        <div>湿度: <?php echo $data->main->humidity; ?> %</div>
+                        <div>風速: <?php echo $data->wind->speed; ?> km/h </div>
                     </div>
                 </div>
-                    
-        
+            </div>
+        </div>
+    
+    <div class="container">
+        <hr color="#c0c0c0">
         @if (!is_null($headline))
             <div class="row">
                 <div class="headline col-md-10 mx-auto">
@@ -88,5 +82,5 @@
             </div>
         </div>
     </div>
-    </div>
+    
 @endsection
