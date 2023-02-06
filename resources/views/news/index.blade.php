@@ -3,9 +3,9 @@
 
 @section('content')
         <div class="container">
-            <div class="col">
+            <div class="row">
                 <hr color="#c0c0c0">
-                <div class="report-container">
+                <div class="side col-md-3">
                     <h2><?php echo $data->name; ?>の天気予報</h2>
                     <div class="time">
                         <div><?php echo date("l g:i a", $currentTime); ?></div>

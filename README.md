@@ -8,7 +8,9 @@
 - (OpenWeather)[https://openweathermap.org/]
 - (【Laravel】レイアウトの作成)[https://qiita.com/oouaioi/items/cc606f915859872eec9a]
 - (Containers (コンテナ))[https://getbootstrap.jp/docs/5.0/layout/containers/]
+- (【PHP】->と::とは？これらの正体と使い方を解説します)[https://tomo-lifeblog.com/what-arrow-scope-php]
 - 
+
 
 
 
