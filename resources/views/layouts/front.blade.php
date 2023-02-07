@@ -30,7 +30,9 @@
                     
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto">
-                             
+                            <li class="nav-item"><a class="nav-link" href="admin/news">ニュース一覧</a></li>
+                            <li class="nav-item"><a class="nav-link" href="admin/profile">自分のプロフィール</a></li>
+                        </ul>     
                         </ul>
                         
                         <ul class="navbar-nav">
