@@ -17,10 +17,11 @@ class NewsController extends Controller
         } else {
             $headline = null;
         }
-
-
+        
+        
+        
         $apiKey = "317fb67cf8c15e3c4cc6f85032868e78";
-        $cityname = "東京都";
+        $cityname = "tokyo";
         $googleApiUrl = "https://api.openweathermap.org/data/2.5/weather?q=" . $cityname . "&lang=ja&units=metric&appid=" . $apiKey;
     
         $ch = curl_init();

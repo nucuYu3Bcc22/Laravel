@@ -7,17 +7,17 @@
                 <hr color="#c0c0c0">
                 <div class="side col-md-3">
                     <h2><?php echo $data->name; ?>の天気予報</h2>
-                    <div class="time">
-                        <div><?php echo date("l g:i a", $currentTime); ?></div>
-                        <div><?php echo date("jS F, Y",$currentTime); ?></div>
-                        <div><?php echo ucwords($data->weather[0]->description); ?></div>
-                    </div>
-                    <div class="weather-forecast">
-                        <img
-                            src="http://openweathermap.org/img/w/<?php echo $data->weather[0]->icon; ?>.png"
-                            class="weather-icon" />最高温度 <?php echo $data->main->temp_max; ?> °C / 
-                            <span class="min-temperature">最低温度 <?php echo $data->main->temp_min; ?> °C</span>
-                    </div>
+                            <div class="time">
+                                <div><?php echo date("l g:i a", $currentTime); ?></div>
+                                <div><?php echo date("jS F, Y",$currentTime); ?></div>
+                                <div><?php echo ucwords($data->weather[0]->description); ?></div>
+                            </div>
+                            <div class="weather-forecast">
+                                <img
+                                    src="http://openweathermap.org/img/w/<?php echo $data->weather[0]->icon; ?>.png"
+                                    class="weather-icon" />最高温度 <?php echo $data->main->temp_max; ?> °C / 
+                                    <span class="min-temperature">最低温度 <?php echo $data->main->temp_min; ?> °C</span>
+                            </div>
                     <div class="time">
                         <div>湿度: <?php echo $data->main->humidity; ?> %</div>
                         <div>風速: <?php echo $data->wind->speed; ?> km/h </div>
@@ -42,12 +42,12 @@
                                             @endif
                                         </div>
                                         <div class="title p-2">
-                                            <h1>{{ Str::limit($headline->title, 70) }}</h1>
+                                            <h1>{{ Str::limit($headline->title, 150) }}</h1>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <p class="body mx-auto">{{ Str::limit($headline->body, 650) }}</p>
+                                    <p class="body mx-auto">{{ Str::limit($headline->body, 1500) }}</p>
                                 </div>
                             </div>
                         </div>
